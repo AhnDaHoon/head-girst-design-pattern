@@ -27,7 +27,7 @@
 
 ```java
 public abstract class Duck {
-	// 인터페이스를 캡슐화하여 상황에 따라 행동을 변경한다.
+	// 행동 인터페이스를 캡슐화하여 상황에 따라 행동을 변경한다.
 	FlyBehavior flyBehavior; 
 	QuackBehavior quackBehavior;
 
