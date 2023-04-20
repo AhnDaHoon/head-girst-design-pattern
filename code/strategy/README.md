@@ -63,7 +63,7 @@ public abstract class Duck {
 public class MallardDuck extends Duck {
 
 	public MallardDuck() {
-		// 구현체를 넣어서 클래스에 맞게 행동을 변경한다.
+		// 클래스에 맞게 행동 인터페이스를 구현한 구현체 넣어준다.
 		quackBehavior = new Quack();
 		flyBehavior = new FlyWithWings();
 
