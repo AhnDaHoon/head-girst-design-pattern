@@ -21,13 +21,14 @@
 
 <br/>
 
-이런 식으로 디자인하면 다른 형식의 객체에서도 나는 행동과 꽥꽥거리는 행동을 재사용할 수 있다. 그리고 기존의 행동 클래스를 수정하거나 날아다니는 행동을 사용하는 Duck 클래스를 전형 건드리지 않고 새로운 행동을 추가할 수 있다.
+이런 식으로 디자인하면 다른 형식의 객체에서도 나는 행동과 꽥꽥거리는 행동을 재사용할 수 있다. 그리고 기존의 행동 클래스를 수정하거나 날아다니는 행동을 사용하는 Duck 클래스를 전혀 건드리지 않고 새로운 행동을 추가할 수 있다.
 
 <br/>
 
 ```java
 public abstract class Duck {
-	FlyBehavior flyBehavior;
+	// 인터페이스를 캡슐화하여 상황에 따라 행동을 변경한다.
+	FlyBehavior flyBehavior; 
 	QuackBehavior quackBehavior;
 
 	public Duck() {
@@ -53,6 +54,22 @@ public abstract class Duck {
 
 	public void swim() {
 		System.out.println("All ducks float, even decoys!");
+	}
+}
+```
+<br/>
+```java
+public class MallardDuck extends Duck {
+
+	public MallardDuck() {
+		// 구현체를 넣어서 클래스에 맞게 행동을 변경한다.
+		quackBehavior = new Quack();
+		flyBehavior = new FlyWithWings();
+
+	}
+
+	public void display() {
+		System.out.println("I'm a real Mallard duck");
 	}
 }
 ```
