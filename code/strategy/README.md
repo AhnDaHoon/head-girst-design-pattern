@@ -74,3 +74,19 @@ public class MallardDuck extends Duck {
 	}
 }
 ```
+<br/>
+
+```java
+public class MiniDuckSimulator {
+ 
+	public static void main(String[] args) {
+ 
+		Duck mallard = new MallardDuck();
+		// Duck에서 상속받은 메서드가 호출이 된다. 이 메서드들은 QuackBehavior와 FlyBehavior에게 할 일을 위임한다. 즉 인터페이스들의 메서드가 호출이 된다.
+		mallard.performQuack(); 
+		mallard.performFly();
+
+
+	}
+}
+```
