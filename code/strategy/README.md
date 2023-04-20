@@ -16,7 +16,7 @@
 
 <br/><br/>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/24b600a2-624c-4fc3-bed8-7f9bc1386131/Untitled.png)
+![image](https://user-images.githubusercontent.com/82018440/233387186-f7f70d2b-956a-45ae-b0af-0c5764eff06e.png)
 
 <br/><br/>
 
