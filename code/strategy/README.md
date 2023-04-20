@@ -58,6 +58,7 @@ public abstract class Duck {
 }
 ```
 <br/>
+
 ```java
 public class MallardDuck extends Duck {
 
