@@ -2,7 +2,7 @@
 옵저버(Observer Pattern)은 한 객체의 상태가 바뀌면 그 객체에 의존하는 다른 객체에게 연락이 가고 자동으로 내용이 갱신되는 방식으로 일대다(1:N) 의존성을 정의한다.
 
 ## 옵저버 패턴의 이해
-옵저버 패턴에서는 Subject(주체)와 Observer(관찰자) 두 가지 역할이 있다. Subject는 상태가 변화할 때 알리는 역할을 하고 Observer는 상태를 감시하고 있으며 변화가 있을 경우 이에 대한 처리를 하는 역할을 한다.
+옵저버 패턴에서는 Subject(주제)와 Observer(관찰자) 두 가지 역할이 있다. Subject는 상태가 변화할 때 알리는 역할을 하고 Observer는 상태를 감시하고 있으며 변화가 있을 경우 이에 대한 처리를 하는 역할을 한다.
 <br/><br/>
 Subject는 Observer 객체들을 등록하고 삭제할 수 있는 인터페이스를 제공한다. Observer는 Subject에서 제공하는 인터페이스를 구현하고, Subject 객체에서 등록/삭제를 할 수 있다. 등록된 옵저버들은 Subject가 보내는 데이터를 수신 받을 수 있다.
 <img src="../img/observer1.png" alt="observer1.png">
